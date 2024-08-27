@@ -57,3 +57,22 @@ document.addEventListener("DOMContentLoaded", function () {
         .scrollIntoView({ behavior: "smooth" });
     });
 });
+
+//x button
+document.addEventListener("DOMContentLoaded", function () {
+  const closeMenuButton = document.querySelector(".close-menu-button");
+  const dropdownContent = document.querySelector(".dropdown-content");
+
+  closeMenuButton.addEventListener("click", function () {
+    dropdownContent.style.display = "none";
+  });
+});
+
+//bar button
+function openMenu(event) {
+  let dropdownContent = document.querySelector(".dropdown-content");
+  dropdownContent.classList.toggle("show");
+}
+
+let barButton = document.querySelector(".dropdownbtn");
+barButton.addEventListener("click", openMenu);

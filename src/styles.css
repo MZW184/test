@@ -35,7 +35,6 @@ body {
 }
 
 .dropdown {
-  position: relative;
   display: inline-block;
   width: 8%;
 }
@@ -65,15 +64,16 @@ body {
 
 .dropdown-content {
   display: none;
-  position: fixed; /* To keep it fixed on the screen */
+  position: fixed;
   top: 8%;
   height: 150%;
   right: 4%;
-  width: 20%; /* Adjust as needed */
+  width: 20%;
   background-color: #ffffff;
-  color: #fff; /* Text color */
+  color: #fff;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
 .dropdown-content a {
@@ -289,7 +289,7 @@ p {
 }
 
 #select {
-  background-color: #white;
+  background-color: white;
   color: black;
   padding: 9px 150px;
   font-size: 30px;
@@ -426,4 +426,18 @@ h2 {
   position: relative;
   top: -290px;
   left: 650px;
+}
+
+.close-menu-button {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.show {
+  display: block;
 }
