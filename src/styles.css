@@ -441,3 +441,12 @@ h2 {
 .show {
   display: block;
 }
+
+.popup-message {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 14px;
+}
